@@ -8,7 +8,7 @@
   "shell-version": [
      "3.2"
   ],
-  "url": "http://kagesenshi.org",
+  "url": "https://github.com/kagesenshi/gnome-shell-extension-stealmyfocus",
   "uuid": "steal-my-focus@kagesenshi.org",
   "version": 1
 }
