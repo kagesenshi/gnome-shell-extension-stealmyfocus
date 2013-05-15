@@ -6,7 +6,7 @@
      "kagesenshi.87@gmail.com"
   ],
   "shell-version": [
-     "3.2", "3.4", "3.5.2", "3.6"
+     "3.2", "3.4", "3.5.2", "3.6", "3.8"
   ],
   "url": "https://github.com/kagesenshi/gnome-shell-extension-stealmyfocus",
   "uuid": "steal-my-focus@kagesenshi.org",
