@@ -14,6 +14,8 @@ StealMyFocus.prototype = {
     },
 
     _onWindowDemandsAttention: function(display, window) {
+        if (window.get_wm_class() == "Skype")
+            return;
         Main.activateWindow(window);
     },
 
