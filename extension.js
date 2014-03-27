@@ -5,6 +5,7 @@ const Lang = imports.lang;
 
 function StealMyFocus() {
     this._init();
+    this.blacklist = ["Skype"];
 }
 
 StealMyFocus.prototype = {
@@ -14,6 +15,13 @@ StealMyFocus.prototype = {
     },
 
     _onWindowDemandsAttention: function(display, window) {
+        for (var i = 0; i < this.blacklist.length; i++) {
+            var name = this.blacklist[i].toLowerCase();
+            if (window.title.toLowerCase().indexOf(name) != -1) {
+                // app in blacklist, return and do nothing
+                return;
+            }
+        }
         Main.activateWindow(window);
     },
 
